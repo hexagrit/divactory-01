@@ -21,20 +21,15 @@ const epicMiddleware = createEpicMiddleware(rootEpic, {
     catch: _catch,
     throw: _throw,
     of,
+    timer,
     mergeMap,
     map,
     filter,
     ajax,
     debounceTime,
-    distinctUntilChanged,
     throttleTime,
-    timer,
-    switchMap,
     takeUntil,
-    merge,
     skipUntil,
-    concatAll,
-    concat
   }
 });
 
