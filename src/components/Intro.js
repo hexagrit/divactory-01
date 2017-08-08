@@ -31,12 +31,12 @@ const styles = StyleSheet.create({
   box: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
-    // backgroundColor: '#eee'
+    justifyContent: 'center',
+    backgroundColor: '#965e7d'
   },
   container: {
-    textAlign: 'center'
-    // color: 'white'
+    textAlign: 'center',
+    color: 'white'
   },
   title: {
     fontSize: 50
