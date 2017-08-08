@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from './ducks/number';
 import './App.css';
+import Intro from './components/Intro';
+import Example from './components/Example';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -21,11 +24,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Hexagrit App</h1>
-        {/* {arr.map(item =>
-          <p>{item}</p>
-        )}
-        <button onClick={this.randomNumberClick}>random</button> */}
+        <Intro />
+        <Example title="Step 1" gist="31480a545e40fecf39eb12b11cc3fad2"/>
+        <Example title="Step 2" gist="87825a18e6685144ae3b"/>
+        <Example title="Step 3" gist="ffd42dff7def4fa7420083b1ba42fb51"/>
       </div>
     );
   }
