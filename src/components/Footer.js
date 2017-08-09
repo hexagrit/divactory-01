@@ -20,11 +20,19 @@ class Footer extends React.Component {
           <br />
           Hexagrit
         </h3>
+        <h3>=</h3>
         <div className={css(styles.item, styles.boxRight)}>
-          {members.map(member =>
-            <span className={css(styles.member)}>
-              <Snippet text={member} />
-            </span>
+          {members.map((member, i) => {
+            const isPlusRender = i < members.length - 1;
+            return (
+              <span className={css(styles.member)}>
+                <Snippet text={member} />
+                {isPlusRender &&
+                  <span className={css(styles.plus)}>+</span>
+                }
+              </span>
+            )
+          }
           )}
         </div>
       </div>
@@ -37,17 +45,16 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    color: mainColor
   },
   item: {
     margin: 5
   },
   boxLeft: {
-    padding: 50
+    padding: 30,
+    color: mainColor
   },
   boxRight: {
-    borderLeft: `1px solid ${mainColor}`,
-    padding: 50,
+    padding: 20,
     height: 200,
     display: 'flex',
     justifyContent: 'center',
@@ -55,6 +62,10 @@ const styles = StyleSheet.create({
   },
   member: {
     margin: 5
+  },
+  plus: {
+    marginLeft: 10,
+    // color: mainColor
   }
 })
 
