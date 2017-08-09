@@ -15,11 +15,11 @@ class Footer extends React.Component {
     const browserHeight = window.innerHeight;
     return (
       <div className={css(styles.box)} style={{ height: 400 }}>
-        <div className={css(styles.item, styles.boxLeft)}>
+        <h3 className={css(styles.item, styles.boxLeft)}>
           Team
           <br />
           Hexagrit
-        </div>
+        </h3>
         <div className={css(styles.item, styles.boxRight)}>
           {members.map(member =>
             <span className={css(styles.member)}>
