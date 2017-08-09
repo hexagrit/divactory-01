@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { StyleSheet, css } from 'aphrodite';
 import './App.css';
 import Intro from './components/Intro';
 import Step1 from './components/Step1';
 import Step2 from './components/Step2';
 import Description from './components/Description';
-import { StyleSheet, css } from 'aphrodite';
+import Footer from './components/Footer';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +20,7 @@ class App extends Component {
           <Step1 />
           <Step2 />
         </div>
+        <Footer />
       </div>
     );
   }
