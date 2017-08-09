@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite';
+import { mainColor, secondaryColor } from '../styles/theme';
 
 const Tab = ({ number, title, children }) => {
   return (
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     margin: '30px 0px'
   },
   header: {
-    backgroundColor: '#965e7d',
+    backgroundColor: mainColor,
     color: 'white',
     padding: '10px 15px',
     margin: 0,
@@ -36,13 +37,13 @@ const styles = StyleSheet.create({
   },
   container: {
     padding: 50,
-    backgroundColor: '#eee'
+    backgroundColor: secondaryColor
   },
   number: {
     width: 40,
     height: 40,
-    borderRadius: '50%',
-    color: '#965e7d',
+    borderRadius: 20,
+    color: mainColor,
     backgroundColor: 'white',
     display: 'flex',
     alignItems: 'center',
